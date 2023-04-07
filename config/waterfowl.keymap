@@ -48,13 +48,13 @@
 			tapping-term-ms = <200>;
 			bindings = <&mo>, <&sk>;
 		};
-		// caps: caps_char_word {
-		// 	compatible = "zmk,behavior-tap-dance";
-		// 	label = "TAP_DANCE_0";
-		// 	#binding-cells = <0>;
-		// 	tapping-term-ms = <200>;
-		// 	bindings = <&lhs L_FUN LSHFT>, <&caps_word>;
-		// };
+		caps: caps_char_word {
+			compatible = "zmk,behavior-tap-dance";
+			label = "TAP_DANCE_0";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&lhs L_FUN LSHFT>, <&caps_word>;
+		};
 		bhm: balanced_homerow_mods {
 			compatible = "zmk,behavior-hold-tap";
       label = "BALANCED_HOMEROW_MODS";
@@ -92,7 +92,7 @@
 			sensor-bindings = <
 				&inc_dec_kp DOWN UP
 				&inc_dec_kp C_VOL_DN C_VOL_UP
-				&inc_dec_kp PG_DN PG_UP
+				&inc_dec_kp RC(TAB) RC(RS(TAB))
 				&inc_dec_kp LEFT RIGHT
 			>;
 		};
@@ -208,7 +208,7 @@
 			sensor-bindings = <
 				&inc_dec_kp PAGE_DOWN PAGE_UP
 				&inc_dec_kp C_VOL_DN C_VOL_UP
-				&inc_dec_kp DOWN UP
+				&inc_dec_kp PG_DN PG_UP
 				&inc_dec_kp LEFT RIGHT
 			>;
 		};
