@@ -93,7 +93,7 @@
 			   &kp Q       &kp W       &kp F         &kp P           &kp G                    &kp J            &kp L             &kp U            &kp Y         &kp SEMI    
          &bhm LGUI A &bhm LALT R &bhm LCTRL S  &bhm LSHIFT T   &kp D                    &kp H            &bhm RSHIFT N     &bhm RCTRL E     &bhm RALT I   &bhm RGUI O 
          &kp Z       &kp X       &kp C         &kp V           &kp B                    &kp K            &kp M             &kp COMMA        &kp DOT       &kp FSLH    
-         &kp N1      &tog GAME   &lt NAV SPACE &mo FUNC        &kp N2                   &kp N3           &lt SYMB TAB      &lt NUM RETURN   &kp ESC       &kp N4 
+         &kp N1      &tog GAME   &lt NAV SPACE &mo FUNC        &kp N2                   &tog BT          &lt SYMB TAB      &lt NUM RETURN   &kp ESC       &kp N4 
 			>;
 
 			sensor-bindings = <
@@ -191,8 +191,8 @@
 			>;
 		};
 
-		num_layer {
-/* 4 L_NUM
+		bt_layer {
+/* 4 BT
  *
  * ,----------------------------------.                      ,----------------------------------.
  * |  [   |  7   |  8   |  9   |  ]   |                      |      |      |      |      |      |
@@ -206,10 +206,10 @@
  *          `-----'   `--------------------'            `--------------------'   `-----'
  */
 			bindings = <
-	&kp LBKT	&kp N7	&kp N8	&kp N9		&kp RBKT		&none		&none		&none		&none		&none
-	&kp SEMI 	&kp N4	&kp N5	&kp N6		&kp EQUAL		&kp RSHFT	&kp RCTRL	&kp RALT	&kp RGUI	&none
-	&kp GRAVE	&kp N1	&kp N2	&kp N3		&kp BSLH		&none		&none		&none		&none		&none
-	&kp N1		&kp DOT	&kp N0	&kp MINUS	&tog L_NUM		&kp N3		&none		&trans		&none		&kp N4
+         &none      &ext_power EP_TOG &none           &bt BT_CLR      &out OUT_BLE                     &none          &none          &none        &none           &none
+         &kp LGUI   &bt BT_SEL 4      &bt BT_SEL 4    &none           &out OUT_USB                     &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT_ARROW &none 
+         &none      &bt BT_SEL 1      &bt BT_SEL 2    &bt BT_SEL 3    &out OUT_TOG                     &kp HOME       &kp PG_DN      &kp PG_UP    &kp END         &none 
+         &none      &none             &none           &none           &none                            &tog BT        &none          &none        &none           &none
 			>;
 
 			sensor-bindings = <
