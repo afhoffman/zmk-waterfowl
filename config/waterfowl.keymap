@@ -48,13 +48,13 @@
 			tapping-term-ms = <200>;
 			bindings = <&mo>, <&sk>;
 		};
-		// caps: caps_char_word {
-		// 	compatible = "zmk,behavior-tap-dance";
-		// 	label = "TAP_DANCE_0";
-		// 	#binding-cells = <0>;
-		// 	tapping-term-ms = <200>;
-		// 	bindings = <&lhs L_FUN LSHFT>, <&caps_word>;
-		// };
+		caps: caps_char_word {
+			compatible = "zmk,behavior-tap-dance";
+			label = "TAP_DANCE_0";
+			#binding-cells = <0>;
+			tapping-term-ms = <210>;
+			bindings = <&kp SEMI>, <&caps_word>;
+		};
 		bhm: balanced_homerow_mods {
 			compatible = "zmk,behavior-hold-tap";
       label = "BALANCED_HOMEROW_MODS";
@@ -83,7 +83,7 @@
  *          `-----'   `--------------------'            `--------------------'   `-----'
  */
 			bindings = <
-			   &kp Q       &kp W       &kp F         &kp P           &kp G                    &kp J            &kp L             &kp U            &kp Y         &kp SEMI    
+			   &kp Q       &kp W       &kp F         &kp P           &kp G                    &kp J            &kp L             &kp U            &kp Y         &caps
          &bhm LGUI A &bhm LALT R &bhm LCTRL S  &bhm LSHIFT T   &kp D                    &kp H            &bhm RSHIFT N     &bhm RCTRL E     &bhm RALT I   &bhm RGUI O 
          &kp Z       &kp X       &kp C         &kp V           &kp B                    &kp K            &kp M             &kp COMMA        &kp DOT       &kp FSLH    
          &tog GAME   &kp SPACE   &lt NAV BSPC  &lt FUNC ESC    &kp C_MUTE               &tog BT          &lt SYMB DEL      &lt NUM TAB      &kp RET       &kp N4 
