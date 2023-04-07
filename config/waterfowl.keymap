@@ -10,14 +10,6 @@
 #include <dt-bindings/zmk/outputs.h>
 
 /* Layers */
-#define L_DFT 0
-#define L_NAV 1
-#define L_MOUSE 2
-#define L_MEDIA 3
-#define L_NUM 4
-#define L_SYM 5
-#define L_FUN 6
-
 #define COL  0
 #define NUM  1
 #define SYMB 2
@@ -94,7 +86,7 @@
 			   &kp Q       &kp W       &kp F         &kp P           &kp G                    &kp J            &kp L             &kp U            &kp Y         &kp SEMI    
          &bhm LGUI A &bhm LALT R &bhm LCTRL S  &bhm LSHIFT T   &kp D                    &kp H            &bhm RSHIFT N     &bhm RCTRL E     &bhm RALT I   &bhm RGUI O 
          &kp Z       &kp X       &kp C         &kp V           &kp B                    &kp K            &kp M             &kp COMMA        &kp DOT       &kp FSLH    
-         &tog GAME   &kp BSPC    &lt NAV SPACE &lt FUNC ESC    &kp N2                   &tog BT          &lt SYMB TAB      &lt NUM RETURN   &kp ESC       &kp N4 
+         &tog GAME   &kp SPACE   &lt NAV BSPC  &lt FUNC ESC    &kp N2                   &tog BT          &lt SYMB ESC      &lt NUM TAB      &kp RET       &kp N4 
 			>;
 
 			sensor-bindings = <
@@ -163,8 +155,8 @@
 			>;
 		};
 
-		media_layer {
-/* 3 L_MEDIA
+		nav_layer {
+/* 3 NAV
  *
  * ,----------------------------------.                      ,----------------------------------.
  * |      |      |      |      | BTCLR|                      | BT 0 | BT 1 | BT 2 | BT 3 | BT 4 |
@@ -178,10 +170,10 @@
  *          `-----'   `--------------------'            `--------------------'   `-----'
  */
 			bindings = <
-	&none		&none		&none		&none		&bt BT_CLR		&bt BT_SEL 0	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 3	&bt BT_SEL 4
-	&kp LGUI 	&kp LALT	&kp LCTRL	&kp LSHFT	&none			&kp C_PREV	&kp C_VOL_DN	&kp C_VOL_UP	&kp C_NEXT	&none
-	&none		&none		&none		&none		&none			&none		&none			&none			&none		&none
-	&kp N1		&none		&none		&trans		&kp N2			&kp N3		&kp C_STOP		&kp C_PP		&kp C_MUTE	&kp N4
+         &trans       &trans            &trans           &trans          &trans                       &trans         &trans         &trans       &trans          &trans 
+         &kp LGUI     &kp LALT          &kp LCTRL        &kp LSHIFT      &trans                       &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT_ARROW &trans 
+         &trans       &trans            &trans           &trans          &trans                       &kp HOME       &kp PG_DN      &kp PG_UP    &kp END         &trans 
+         &trans       &trans            &trans           &trans          &trans                       &trans         &trans         &trans       &trans          &trans
 			>;
 
 			sensor-bindings = <
