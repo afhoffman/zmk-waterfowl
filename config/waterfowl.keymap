@@ -54,6 +54,15 @@
 			tapping-term-ms = <200>;
 			bindings = <&lhs L_FUN LSHFT>, <&caps_word>;
 		};
+		bhm: balanced_homerow_mods {
+			compatible = "zmk,behavior-hold-tap";
+      label = "BALANCED_HOMEROW_MODS";
+      #binding-cells = <2>;
+      tapping-term-ms = <210>;
+      quick-tap-ms = <0>;
+      flavor = "balanced";
+      bindings = <&kp>, <&kp>;
+		};
 	};
 	keymap {
 		compatible = "zmk,keymap";
