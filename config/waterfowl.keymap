@@ -17,6 +17,14 @@
 #define L_SYM 5
 #define L_FUN 6
 
+#define COL  0
+#define NUM  1
+#define SYMB 2
+#define NAV  3
+#define BT   4
+#define FUNC 5
+#define GAME 6
+
 &sk {
 	quick-release;
 };
@@ -82,10 +90,10 @@
  *          `-----'   `--------------------'            `--------------------'   `-----'
  */
 			bindings = <
-	&kp Q		&kp W		&kp E		&kp R		&kp T			&kp Y	&kp U		&kp I		&kp O		&kp P
-	&hh LGUI A	&hh LALT S	&hh LCTRL D	&hh LSHFT F	&kp G			&kp H	&hh LSHFT J	&hh LCTRL K	&hh LALT L	&hh LGUI APOS
-	&kp Z		&hh RALT X	&kp C		&kp V		&kp B			&kp N	&kp M		&kp COMMA	&hh RALT DOT	&kp FSLH
-	&kp N1	&lh L_MEDIA ESC	&lh L_NAV SPACE	&lh L_MOUSE TAB	&tog L_NUM	&tog L_NAV	&lh L_SYM BSPC	&lh L_NUM RET	&caps	&kp N4
+			   &kp Q       &kp W       &kp F         &kp P           &kp G                    &kp J            &kp L             &kp U            &kp Y         &kp SEMI    
+   &bhm LGUI A &bhm LALT R &bhm LCTRL S  &bhm LSHIFT T   &kp D                    &kp H            &bhm RSHIFT N     &bhm RCTRL E     &bhm RALT I   &bhm RGUI O 
+   &kp Z       &kp X       &kp C         &kp V           &kp B                    &kp K            &kp M             &kp COMMA        &kp DOT       &kp FSLH    
+   &kp N1      &tog GAME   &lt NAV SPACE &mo FUNC        &kp N2                   &kp N3           &lt SYMB TAB      &lt NUM RETURN   &kp ESC 
 			>;
 
 			sensor-bindings = <
