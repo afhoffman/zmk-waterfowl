@@ -9,6 +9,14 @@
 #include <dt-bindings/zmk/bt.h>
 
 /* Layers */
+#define L_DFT 0
+#define L_NAV 1
+#define L_MOUSE 2
+#define L_MEDIA 3
+#define L_NUM 4
+#define L_SYM 5
+#define L_FUN 6
+
 #define COL  0
 #define NUM  1
 #define SYMB 2
@@ -85,7 +93,7 @@
 			   &kp Q       &kp W       &kp F         &kp P           &kp G                    &kp J            &kp L             &kp U            &kp Y         &kp SEMI    
          &bhm LGUI A &bhm LALT R &bhm LCTRL S  &bhm LSHIFT T   &kp D                    &kp H            &bhm RSHIFT N     &bhm RCTRL E     &bhm RALT I   &bhm RGUI O 
          &kp Z       &kp X       &kp C         &kp V           &kp B                    &kp K            &kp M             &kp COMMA        &kp DOT       &kp FSLH    
-         &kp N1      &tog GAME   &lt NAV SPACE &mo FUNC        &kp N2                   &kp N3           &lt SYMB TAB      &lt NUM RETURN   &kp ESC 
+         &kp N1      &tog GAME   &lt NAV SPACE &mo FUNC        &kp N2                   &kp N3           &lt SYMB TAB      &lt NUM RETURN   &kp ESC       &kp N4 
 			>;
 
 			sensor-bindings = <
@@ -97,7 +105,7 @@
 		};
 
 		number_layer {
-/* 1 NUM
+/* 1 L_NUM
  *
  * ,----------------------------------.                      ,----------------------------------.
  * |  ⌘Q  |  ⌘W  |      |      |      |                      |      |      |      |      |      |
