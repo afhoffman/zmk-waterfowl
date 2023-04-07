@@ -170,10 +170,10 @@
  *          `-----'   `--------------------'            `--------------------'   `-----'
  */
 			bindings = <
-         &trans       &trans            &trans           &trans          &trans                       &trans         &trans         &trans       &trans          &trans 
-         &kp LGUI     &kp LALT          &kp LCTRL        &kp LSHIFT      &trans                       &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT_ARROW &trans 
-         &trans       &trans            &trans           &trans          &trans                       &kp HOME       &kp PG_DN      &kp PG_UP    &kp END         &trans 
-         &trans       &trans            &trans           &trans          &trans                       &trans         &trans         &trans       &trans          &trans
+         &trans       &trans            &trans           &trans          &trans                       &trans             &trans         &trans       &trans          &trans 
+         &kp LGUI     &kp LALT          &kp LCTRL        &kp LSHIFT      &trans                       &kp LEFT_ARROW     &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT_ARROW &trans 
+         &trans       &trans            &trans           &trans          &trans                       &kp HOME           &kp PG_DN      &kp PG_UP    &kp END         &trans 
+         &trans       &trans            &trans           &trans          &trans                       &kp C_PLAY_PAUSE   &kp C_NEXT     &trans       &trans          &trans
 			>;
 
 			sensor-bindings = <
